@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../ATM_machine.srcs/sources_1/new/determine_amount.sv" \
+"../../../../ATM_machine.srcs/sim_1/new/amount_tests.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
